@@ -9,7 +9,7 @@
 
 The interactive platform is deployed and publicly accessible online:
 
-👉 **[https://viralgraph.streamlit.app/](https://viralgraph.streamlit.app/)**
+👉  [https://viralgraph.onrender.com/](https://viralgraph.onrender.com/)
 
 ---
 
