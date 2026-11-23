@@ -1,0 +1,32 @@
+# Preset Scenarios for What-If Simulation
+
+scenarios:
+  organic_viral:
+    description: "Moderate transmission probability across a scale-free network originating from early adopter hub."
+    network_type: "barabasi_albert"
+    seed_selection_strategy: "high_degree"
+    seed_count: 3
+    transmission_probability: 0.12
+
+  echo_chamber_rumor:
+    description: "High intra-community diffusion within an isolated cluster with low cross-community bridge leakage."
+    network_type: "stochastic_block_model"
+    seed_selection_strategy: "single_community_core"
+    seed_count: 5
+    transmission_probability: 0.25
+
+  bridge_amplification:
+    description: "Seed placed on a structural bottleneck (high betweenness, low degree) bridging two massive clusters."
+    network_type: "stochastic_block_model"
+    seed_selection_strategy: "high_betweenness_bridge"
+    seed_count: 2
+    transmission_probability: 0.18
+
+  immunized_network:
+    description: "Simulating intervention by inoculating the top 5% highest-betweenness bridge nodes."
+    network_type: "barabasi_albert"
+    inoculation_strategy: "targeted_betweenness"
+    inoculation_ratio: 0.05
+    seed_selection_strategy: "random"
+    seed_count: 5
+    transmission_probability: 0.20

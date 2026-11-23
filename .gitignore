@@ -1,0 +1,35 @@
+# Python Environment & Cache
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build & Packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Data Storage (Do not commit raw massive dumps)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# VS Code & IDE settings
+.vscode/
+.idea/

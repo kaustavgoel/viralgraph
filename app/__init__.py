@@ -1,0 +1,1 @@
+"""ViralGraph Streamlit web application."""
