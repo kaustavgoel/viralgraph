@@ -7,6 +7,14 @@ and page execution across all eight core platform modules.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+# Ensure repository root is in sys.path so modules under app and viralgraph are discoverable
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
 import streamlit as st
 
 from app.components.sidebar import render_shared_sidebar
