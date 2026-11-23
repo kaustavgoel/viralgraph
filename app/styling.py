@@ -25,13 +25,21 @@ def apply_dark_theme() -> None:
         header[data-testid="stHeader"] {
             background: transparent;
         }
-        #MainMenu {visibility: hidden; display: none;}
-        footer {visibility: hidden; display: none;}
-        .stDeployButton {visibility: hidden; display: none;}
-        [data-testid="stToolbar"] {visibility: hidden; display: none;}
-        [data-testid="stDecoration"] {visibility: hidden; display: none;}
-        [data-testid="stStatusWidget"] {visibility: hidden; display: none;}
-        div[data-testid="stToolbarActions"] {visibility: hidden; display: none;}
+        /* Complete Streamlit Cloud Branding, Profile Badge & Watermark Clean-up */
+        #MainMenu {visibility: hidden; display: none !important;}
+        footer {visibility: hidden; display: none !important;}
+        .stDeployButton {visibility: hidden; display: none !important;}
+        [data-testid="stToolbar"] {visibility: hidden; display: none !important;}
+        [data-testid="stDecoration"] {visibility: hidden; display: none !important;}
+        [data-testid="stStatusWidget"] {visibility: hidden; display: none !important;}
+        div[data-testid="stToolbarActions"] {visibility: hidden; display: none !important;}
+        [class*="viewerBadge"] {visibility: hidden; display: none !important;}
+        [class*="ProfileBadge"] {visibility: hidden; display: none !important;}
+        [class*="profileBadge"] {visibility: hidden; display: none !important;}
+        [data-testid="stHeaderAvatar"] {visibility: hidden; display: none !important;}
+        a[href*="github.com/kaustavgoel"] {display: none !important;}
+        .viewerBadge_container__r5tak {display: none !important;}
+        .viewerBadge_link__1S137 {display: none !important;}
 
         /* Reusable Card Containers */
         .vg-card {
