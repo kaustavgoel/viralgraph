@@ -21,10 +21,17 @@ def apply_dark_theme() -> None:
             border-right: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        /* Top Header Area Clean-up */
+        /* Top Header Area Clean-up & Hide Fork/Toolbar */
         header[data-testid="stHeader"] {
             background: transparent;
         }
+        #MainMenu {visibility: hidden; display: none;}
+        footer {visibility: hidden; display: none;}
+        .stDeployButton {visibility: hidden; display: none;}
+        [data-testid="stToolbar"] {visibility: hidden; display: none;}
+        [data-testid="stDecoration"] {visibility: hidden; display: none;}
+        [data-testid="stStatusWidget"] {visibility: hidden; display: none;}
+        div[data-testid="stToolbarActions"] {visibility: hidden; display: none;}
 
         /* Reusable Card Containers */
         .vg-card {
